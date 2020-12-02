@@ -2,9 +2,10 @@ with open("input.txt") as f:
   input = list(map(int, f.readlines()))
 
 found = False
+sorted_input = sorted(input)
 
 for x in sorted(input, reverse=True):
-  for y in sorted(input):
+  for y in sorted_input:
     if x == y:
       continue
 
